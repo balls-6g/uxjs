@@ -1,0 +1,21 @@
+{
+    "name": "ux.js",
+    "version": "0.1.0",
+    "description": "A minimal reactive UI framework for building web applications.",
+    "main": "index.js",
+    "type": "module",
+    "exports": {
+        ".": "./index.js"
+    },
+    "keywords": [],
+    "author": "balls",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/balls-6g/uxjs.git"
+    },
+    "bugs": {
+        "url": "https://github.com/balls-6g/uxjs/issues"
+    },
+    "homepage": "https://github.com/balls-6g/uxjs#readme"
+}
