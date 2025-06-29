@@ -232,7 +232,7 @@ class If extends HTMLElement {
 
 customElements.define('ux-if', If)
 
-export function If(condition, thenText = '', elseText = '') {
+export function UXIf(condition, thenText = '', elseText = '') {
     const el = createElement('ux-if')
     el.condition = condition
     el.setAttribute('then', thenText)
@@ -281,7 +281,7 @@ class For extends HTMLElement {
 
 customElements.define('ux-for', For)
 
-export function For(data, renderFn) {
+export function UXFor(data, renderFn) {
     const el = createElement('ux-for')
     el.setData(data, renderFn)
     return el
