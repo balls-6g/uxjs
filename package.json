@@ -1,5 +1,5 @@
 {
-    "name": "ux.js",
+    "name": "@balls-6g/ux.js",
     "version": "0.1.0",
     "description": "A minimal reactive UI framework for building web applications.",
     "main": "index.js",
