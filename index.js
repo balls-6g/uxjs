@@ -33,7 +33,7 @@ export function css(code) {
 }
 
 export function srcCss(url) {
-    displayElement(createElement('link', { rel: 'stylesheet', href: url }))
+    document.head.append(createElement('link', { rel: 'stylesheet', href: url }))
 }
 
 export class Data {
