@@ -22,8 +22,10 @@ export function createElement(type, props = {}, ...children) {
     return el
 }
 
-export function displayElement(html) {
-    document.body.append(html)
+export function displayElement(...htmls) {
+    htmls.forEach((html) => {
+        document.body.append(html)
+    })
 }
 
 export function css(code) {
@@ -143,6 +145,23 @@ export function A(href, text, opts = {}, style = 'color: blue; text-decoration: 
         'a',
         {
             href,
+            style,
+            ...opts,
+        },
+        text,
+    )
+
+    return el
+}
+
+export function H(level = 1, text = '', opts = {}, style = 'margin: 0.5em 0;') {
+    if (level < 1 || level > 6) {
+        console.warn('Heading level must be between 1 and 6. Defaulting to level 1.')
+        level = 1
+    }
+    let el = createElement(
+        `h${level}`,
+        {
             style,
             ...opts,
         },
