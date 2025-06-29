@@ -1,6 +1,6 @@
 {
     "name": "ux-js-web",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "description": "A minimal reactive UI framework for building web applications.",
     "main": "index.js",
     "type": "module",
